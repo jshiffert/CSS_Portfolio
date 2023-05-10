@@ -59,6 +59,27 @@ nav {
   flex-wrap: wrap;
 }
 
+.toplinks {
+  margin: 0 10px;
+  color: var(--secondary);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+
+.toplinks:hover {
+  color: var(--light);
+  cursor:pointer;
+}
+
+.danpic {
+  width: 400px;
+  height:auto;
+}
+
+h3 {
+  font-size: 100%;
+}
+
 main {
   margin-top: 20px;
   margin-bottom: 45px;
@@ -74,8 +95,12 @@ main {
   color: var(--light);
   padding: 2% 6%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
+  text-align: right;
+}
+.subtitle {
+  width:100%;
   text-align: right;
 }
 
