@@ -33,6 +33,7 @@ p {
   margin: 0;
 }
 
+/*properties for the header of the page*/
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -43,7 +44,7 @@ header {
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
-
+/*properties for title text on the header*/
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -52,30 +53,30 @@ header h1 {
   font-size: 4vw;
   line-height: 1;
 }
-
+/*navbar*/
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+/*text for navbar links*/
 .toplinks {
   margin: 0 10px;
   color: var(--secondary);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
 }
-
+/*hover action on links*/
 .toplinks:hover {
   color: var(--light);
   cursor:pointer;
 }
-
+/*developer dan's picture*/
 .danpic {
   width: 400px;
   height:auto;
 }
-
+/*font size under picture*/
 h3 {
   font-size: 100%;
 }
@@ -84,7 +85,7 @@ main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
-
+/*section with background picture at the top of the main conent*/
 .hero-banner {
   background: rgb(68, 88, 120);
   background-image: url('../images/02-hero-bg.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -99,17 +100,18 @@ main {
   align-items: flex-end;
   text-align: right;
 }
+/*subtitle on the right side of the banner*/
 .subtitle {
   width:100%;
   text-align: right;
 }
-
+/*main*/
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
-
+/*properties for the three main sections*/
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -119,7 +121,7 @@ main {
   align-items: stretch;
   justify-content: space-between;
 }
-
+/*h2 within sections*/
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -128,18 +130,18 @@ main {
   font-size: 4vw;
   line-height: 1.1;
 }
-
+/*div within sections*/
 .page-section > div {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 77%;
   justify-content: center;
 }
-
+/*paragraph margin*/
 .page-section p {
   margin-bottom: 20px;
 }
-
+/*project image properties*/
 .work-image {
   margin: 0 0;
   border-style: solid;
@@ -149,17 +151,17 @@ main {
   width: 40%;
   justify-content: center;
 }
-
+/*first image larger*/
 .first {
   width: 80%;
 }
-
+/*image within the sub-sections*/
 .work-image img {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
+/*title on projects*/
 .work-image h4 {
   position: relative;
   text-align: left;
@@ -168,15 +170,15 @@ main {
   top:-100px;
   right:-40px;
 }
-
+/*title on first project bigger*/
 .first h4 {
   font-size: 40px;
 }
-
+/*color behind text*/
 .work-image h4 span {
   background-color: var(--primary);
 }
-
+/*subtitle on projects*/
 .work-image h5 {
   position: relative;
   text-align: left;
@@ -185,23 +187,21 @@ main {
   top:-107px;
   right:-40px;
 }
-
+/*subtitle on first project*/
 .first h5 {
   font-size: 20px;
   top:-110px;
 }
-
+/*color behind text*/
 .work-image h5 span {
   background-color: var(--primary);
 }
-
+/*change cursor and opacity on hover*/
 .work-image:hover {
   cursor: pointer;
   opacity: 0.5;
 }
-
-
-
+/*contact object properties*/
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +209,7 @@ main {
   align-items: center;
   height: 100%;
 }
-
+/*contact text properties*/
 .contact address a {
   color: var(--tertiary);
   padding: 5px;
@@ -224,12 +224,12 @@ main {
   margin: 0 2rem 2rem;
   display: inline-block;
 }
-
+/*contact hover properties*/
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }
-
+/*change layout of projects when the screen size is small*/
 @media screen and (max-width: 768px) {
   .page-section > div {
     flex-direction: column;
